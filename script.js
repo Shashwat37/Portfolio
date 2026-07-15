@@ -4,6 +4,9 @@
    ======================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // ── Theme toggle ──
+  initThemeToggle();
+
   // ── Custom Cursor Glow ──
   initCursorGlow();
 
@@ -21,7 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Active nav highlighting ──
   initActiveNav();
+
+  // ── Dynamic age calculation ──
+  initDynamicAge();
 });
+
+/* ═════════════════════════════════════════
+   THEME TOGGLE (Dark / Light)
+   ═════════════════════════════════════════ */
+function initThemeToggle() {
+  const toggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  if (!toggle) return;
+
+  // Load saved theme or default to dark
+  const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+  html.setAttribute('data-theme', savedTheme);
+
+  toggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('portfolio-theme', next);
+  });
+}
 
 /* ═════════════════════════════════════════
    CUSTOM CURSOR GLOW
@@ -42,8 +68,8 @@ function initCursorGlow() {
 
     function animateGlow() {
       // Smooth lerp
-      glowX += (mouseX - glowX) * 0.08;
-      glowY += (mouseY - glowY) * 0.08;
+      glowX += (mouseX - glowX) * 0.06;
+      glowY += (mouseY - glowY) * 0.06;
       glow.style.left = glowX + 'px';
       glow.style.top = glowY + 'px';
       requestAnimationFrame(animateGlow);
@@ -62,8 +88,6 @@ function initNavbar() {
   const navbar = document.getElementById('navbar');
   if (!navbar) return;
 
-  let lastScroll = 0;
-
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
@@ -72,8 +96,6 @@ function initNavbar() {
     } else {
       navbar.classList.remove('scrolled');
     }
-
-    lastScroll = currentScroll;
   }, { passive: true });
 }
 
@@ -198,4 +220,29 @@ function initActiveNav() {
   });
 
   sections.forEach(section => observer.observe(section));
+}
+
+/* ═════════════════════════════════════════
+   DYNAMIC AGE CALCULATION
+   ═════════════════════════════════════════ */
+function initDynamicAge() {
+  const ageEl = document.getElementById('dynamicAge');
+  if (!ageEl) return;
+
+  const dob = new Date(2005, 2, 31); // March 31, 2005 (months are 0-indexed)
+
+  function calculateAge() {
+    const today = new Date();
+    let age = today.getFullYear() - dob.getFullYear();
+    const monthDiff = today.getMonth() - dob.getMonth();
+
+    // If birthday hasn't occurred yet this year, subtract 1
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
+      age--;
+    }
+
+    ageEl.textContent = age + ' years';
+  }
+
+  calculateAge();
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,15 +27,19 @@
       <div class="nav-links" id="navLinks">
         <a href="#home" class="active">Home</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Education</a>
         <a href="#tools">Tools</a>
         <a href="#contact" class="nav-cta">Let's Talk</a>
       </div>
-      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -48,32 +52,71 @@
             <span class="dot"></span>
             Available for opportunities
           </div>
-          <h1 class="hero-name reveal reveal-delay-1">SHASHWAT<br>VERMA</h1>
+          <h1 class="hero-name reveal reveal-delay-1">
+            <span class="hero-name-line">SHASHWAT</span>
+            <span class="hero-name-line">VERMA</span>
+          </h1>
           <p class="hero-title reveal reveal-delay-2">Software Engineer</p>
           <p class="hero-tagline reveal reveal-delay-3">
             Turning ideas into code, one commit at a time.
           </p>
-          <div class="hero-socials reveal reveal-delay-4">
-            <!-- GitHub -->
-            <a href="https://github.com/Shashwat37" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <div class="hero-actions reveal reveal-delay-4">
+            <div class="hero-socials">
+              <!-- GitHub -->
+              <a href="https://github.com/Shashwat37" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/shashwat-verma-2802b0345/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <!-- Email -->
+              <a href="mailto:shashwatv37@gmail.com" class="social-link" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+              <!-- LeetCode -->
+              <a href="https://leetcode.com/u/Shashwat37/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LeetCode">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+              </a>
+            </div>
+            <a href="Resume.pdf" download class="btn-download-cv" aria-label="Download CV">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
             </a>
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/shashwat-verma-2802b0345/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-            <!-- Email -->
-            <a href="mailto:shashwatv37@gmail.com" class="social-link" aria-label="Email">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </a>
-            <!-- LeetCode -->
-            <a href="https://leetcode.com/u/Shashwat37/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LeetCode">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
-            </a>
+          </div>
+          <!-- Personal Details -->
+          <div class="hero-details reveal reveal-delay-4">
+            <div class="detail-item">
+              <span class="detail-label">Name</span>
+              <span class="detail-value">Shashwat Verma</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Employment</span>
+              <span class="detail-value detail-available">Available</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Phone</span>
+              <span class="detail-value"><a href="tel:+919455517313">+91 9455517313</a></span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Nationality</span>
+              <span class="detail-value">Indian</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Date of Birth</span>
+              <span class="detail-value">31 March 2005</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Age</span>
+              <span class="detail-value" id="dynamicAge">21 years</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Email</span>
+              <span class="detail-value"><a href="mailto:shashwatv37@gmail.com">shashwatv37@gmail.com</a></span>
+            </div>
           </div>
         </div>
         <div class="hero-portrait reveal">
-          <div class="portrait-glow"></div>
           <div class="portrait-wrapper">
             <img src="portrait.jpg" alt="Shashwat Verma" class="portrait-img">
           </div>
@@ -106,45 +149,45 @@
   <section class="skills-marquee" aria-label="Skills">
     <div class="marquee-track">
       <div class="marquee-content">
-        <span class="marquee-item">Python</span>
-        <span class="marquee-item">Java</span>
-        <span class="marquee-item">JavaScript</span>
-        <span class="marquee-item">TypeScript</span>
-        <span class="marquee-item">React.js</span>
-        <span class="marquee-item">Node.js</span>
-        <span class="marquee-item">Express.js</span>
-        <span class="marquee-item">FastAPI</span>
-        <span class="marquee-item">PostgreSQL</span>
-        <span class="marquee-item">MongoDB</span>
-        <span class="marquee-item">Redis</span>
-        <span class="marquee-item">Docker</span>
-        <span class="marquee-item">Tailwind CSS</span>
-        <span class="marquee-item">GSAP</span>
-        <span class="marquee-item">Socket.io</span>
-        <span class="marquee-item">Kotlin</span>
-        <span class="marquee-item">Git</span>
-        <span class="marquee-item">Framer Motion</span>
+        <span class="marquee-item">Python</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Java</span><span class="marquee-dot"></span>
+        <span class="marquee-item">JavaScript</span><span class="marquee-dot"></span>
+        <span class="marquee-item">TypeScript</span><span class="marquee-dot"></span>
+        <span class="marquee-item">React.js</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Node.js</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Express.js</span><span class="marquee-dot"></span>
+        <span class="marquee-item">FastAPI</span><span class="marquee-dot"></span>
+        <span class="marquee-item">PostgreSQL</span><span class="marquee-dot"></span>
+        <span class="marquee-item">MongoDB</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Redis</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Docker</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Tailwind CSS</span><span class="marquee-dot"></span>
+        <span class="marquee-item">GSAP</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Socket.io</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Kotlin</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Git</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Framer Motion</span><span class="marquee-dot"></span>
       </div>
       <!-- Duplicate for seamless loop -->
       <div class="marquee-content" aria-hidden="true">
-        <span class="marquee-item">Python</span>
-        <span class="marquee-item">Java</span>
-        <span class="marquee-item">JavaScript</span>
-        <span class="marquee-item">TypeScript</span>
-        <span class="marquee-item">React.js</span>
-        <span class="marquee-item">Node.js</span>
-        <span class="marquee-item">Express.js</span>
-        <span class="marquee-item">FastAPI</span>
-        <span class="marquee-item">PostgreSQL</span>
-        <span class="marquee-item">MongoDB</span>
-        <span class="marquee-item">Redis</span>
-        <span class="marquee-item">Docker</span>
-        <span class="marquee-item">Tailwind CSS</span>
-        <span class="marquee-item">GSAP</span>
-        <span class="marquee-item">Socket.io</span>
-        <span class="marquee-item">Kotlin</span>
-        <span class="marquee-item">Git</span>
-        <span class="marquee-item">Framer Motion</span>
+        <span class="marquee-item">Python</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Java</span><span class="marquee-dot"></span>
+        <span class="marquee-item">JavaScript</span><span class="marquee-dot"></span>
+        <span class="marquee-item">TypeScript</span><span class="marquee-dot"></span>
+        <span class="marquee-item">React.js</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Node.js</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Express.js</span><span class="marquee-dot"></span>
+        <span class="marquee-item">FastAPI</span><span class="marquee-dot"></span>
+        <span class="marquee-item">PostgreSQL</span><span class="marquee-dot"></span>
+        <span class="marquee-item">MongoDB</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Redis</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Docker</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Tailwind CSS</span><span class="marquee-dot"></span>
+        <span class="marquee-item">GSAP</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Socket.io</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Kotlin</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Git</span><span class="marquee-dot"></span>
+        <span class="marquee-item">Framer Motion</span><span class="marquee-dot"></span>
       </div>
     </div>
   </section>
@@ -154,17 +197,13 @@
     <div class="container">
       <div class="section-header reveal">
         <div class="section-label">Featured Work</div>
-        <h2 class="section-title">RECENT PROJECTS</h2>
+        <h2 class="section-title">RECENT<br>PROJECTS</h2>
       </div>
-      <div class="projects-grid">
+      <div class="projects-list">
 
         <!-- PhishGuard -->
-        <div class="project-card reveal">
-          <div class="project-image">
-            <div class="project-image-placeholder">
-              <div class="project-icon">🛡️</div>
-            </div>
-          </div>
+        <div class="project-item reveal">
+          <div class="project-number">01</div>
           <div class="project-body">
             <div class="project-date">March 2026</div>
             <h3 class="project-name">PhishGuard</h3>
@@ -188,12 +227,8 @@
         </div>
 
         <!-- NEXTRAIL -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-image">
-            <div class="project-image-placeholder">
-              <div class="project-icon">🚆</div>
-            </div>
-          </div>
+        <div class="project-item reveal reveal-delay-1">
+          <div class="project-number">02</div>
           <div class="project-body">
             <div class="project-date">July 2026</div>
             <h3 class="project-name">NEXTRAIL</h3>
@@ -223,7 +258,7 @@
     </div>
   </section>
 
-  <!-- ═══════════ EXPERIENCE / EDUCATION ═══════════ -->
+  <!-- ═══════════ EDUCATION ═══════════ -->
   <section class="experience" id="experience">
     <div class="container">
       <div class="section-header reveal">
@@ -232,19 +267,27 @@
       </div>
       <div class="timeline">
         <div class="timeline-item reveal">
-          <div class="timeline-date">Aug 2024 — May 2028</div>
+          <div class="timeline-date">2021</div>
           <div class="timeline-content">
-            <h3>Noida Institute of Engineering and Technology</h3>
-            <h4>Bachelor of Technology in Computer Science</h4>
-            <p>Greater Noida, Uttar Pradesh</p>
+            <h3>W.H. Smith Memorial School</h3>
+            <h4>Class 10th <span class="edu-board">(ICSE)</span></h4>
+            <p>Varanasi, Uttar Pradesh</p>
           </div>
         </div>
         <div class="timeline-item reveal reveal-delay-1">
-          <div class="timeline-date">Graduated May 2023</div>
+          <div class="timeline-date">2023</div>
           <div class="timeline-content">
             <h3>W.H. Smith Memorial School</h3>
-            <h4>ICSE / ISC</h4>
+            <h4>Class 12th <span class="edu-board">(ISC)</span></h4>
             <p>Varanasi, Uttar Pradesh</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-date">2024 — 2028</div>
+          <div class="timeline-content">
+            <h3>Noida Institute of Engineering and Technology</h3>
+            <h4>Graduation (B.Tech) — Computer Science</h4>
+            <p>Greater Noida, Uttar Pradesh</p>
           </div>
         </div>
       </div>
@@ -256,68 +299,56 @@
     <div class="container">
       <div class="section-header reveal">
         <div class="section-label">Tech Stack</div>
-        <h2 class="section-title">TOOLS & TECHNOLOGIES</h2>
+        <h2 class="section-title">TOOLS &<br>TECHNOLOGIES</h2>
       </div>
       <div class="tools-grid">
         <div class="tool-card reveal">
-          <div class="tool-icon">⚛️</div>
           <div class="tool-name">React.js</div>
           <div class="tool-desc">UI Components</div>
         </div>
         <div class="tool-card reveal reveal-delay-1">
-          <div class="tool-icon">🟢</div>
           <div class="tool-name">Node.js</div>
           <div class="tool-desc">Runtime</div>
         </div>
         <div class="tool-card reveal reveal-delay-2">
-          <div class="tool-icon">🐍</div>
           <div class="tool-name">Python</div>
           <div class="tool-desc">Backend & ML</div>
         </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon">⚡</div>
+        <div class="tool-card reveal reveal-delay-3">
           <div class="tool-name">FastAPI</div>
           <div class="tool-desc">API Framework</div>
         </div>
-        <div class="tool-card reveal reveal-delay-1">
-          <div class="tool-icon">🐘</div>
+        <div class="tool-card reveal">
           <div class="tool-name">PostgreSQL</div>
           <div class="tool-desc">Database</div>
         </div>
-        <div class="tool-card reveal reveal-delay-2">
-          <div class="tool-icon">🍃</div>
+        <div class="tool-card reveal reveal-delay-1">
           <div class="tool-name">MongoDB</div>
           <div class="tool-desc">NoSQL Database</div>
         </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon">🐳</div>
+        <div class="tool-card reveal reveal-delay-2">
           <div class="tool-name">Docker</div>
-          <div class="tool-desc">Containerization</div>
+          <div class="tool-desc">Containers</div>
         </div>
-        <div class="tool-card reveal reveal-delay-1">
-          <div class="tool-icon">📮</div>
+        <div class="tool-card reveal reveal-delay-3">
           <div class="tool-name">Postman</div>
           <div class="tool-desc">API Testing</div>
         </div>
-        <div class="tool-card reveal reveal-delay-2">
-          <div class="tool-icon">🔀</div>
+        <div class="tool-card reveal">
           <div class="tool-name">Git</div>
           <div class="tool-desc">Version Control</div>
         </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon">🔴</div>
+        <div class="tool-card reveal reveal-delay-1">
           <div class="tool-name">Redis</div>
           <div class="tool-desc">Caching</div>
         </div>
-        <div class="tool-card reveal reveal-delay-1">
-          <div class="tool-icon">💻</div>
-          <div class="tool-name">VS Code</div>
-          <div class="tool-desc">Editor</div>
-        </div>
         <div class="tool-card reveal reveal-delay-2">
-          <div class="tool-icon">🔷</div>
           <div class="tool-name">TypeScript</div>
           <div class="tool-desc">Type Safety</div>
+        </div>
+        <div class="tool-card reveal reveal-delay-3">
+          <div class="tool-name">VS Code</div>
+          <div class="tool-desc">Editor</div>
         </div>
       </div>
     </div>
@@ -328,7 +359,7 @@
     <div class="container">
       <div class="section-header reveal">
         <div class="section-label">Beyond Code</div>
-        <h2 class="section-title">EXTRACURRICULARS</h2>
+        <h2 class="section-title">EXTRA<br>CURRICULARS</h2>
       </div>
       <div class="extras-grid">
         <div class="extra-card reveal">
@@ -359,7 +390,11 @@
   <section class="contact" id="contact">
     <div class="container">
       <div class="contact-inner reveal">
-        <h2 class="contact-heading">Let's Work Together</h2>
+        <h2 class="contact-heading">
+          <span class="contact-heading-line">LET'S</span>
+          <span class="contact-heading-line">WORK</span>
+          <span class="contact-heading-line">TOGETHER</span>
+        </h2>
         <p class="contact-text">
           I'm currently open to internships, freelance projects, and collaboration opportunities. Feel free to reach out!
         </p>
@@ -384,7 +419,26 @@
   <!-- ═══════════ FOOTER ═══════════ -->
   <footer class="footer">
     <div class="container">
-      <p>Designed & Built by <span>Shashwat Verma</span> · 2026</p>
+      <div class="footer-inner">
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Education</a>
+          <a href="#tools">Tools</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://github.com/Shashwat37" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/shashwat-verma-2802b0345/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-credit">
+        <p>Designed & Built by <span>Shashwat Verma</span> · 2026</p>
+      </div>
     </div>
   </footer>
 
